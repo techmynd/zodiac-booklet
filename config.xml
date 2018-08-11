@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.phonegap.zoodiacbooklet"
+    versionCode = "10"
+    version     = "1.0.0" >
+
+  <name>Zodiac Booklet</name>
+
+  <description>
+      Zoodiac signs and interesting information about your stars.
+  </description>
+
+  <author href="https://javedkhalil.com" email="info@javedkhalil.com">
+      M. Javed Khalil
+  </author>
+
+  <icon src="icon.png" />
+
+</widget>
