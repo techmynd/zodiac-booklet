@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.phoneGap.zodiacsbooklet" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Zoodiac Booklet</name>
+    <name>Zodiac Booklet</name>
     <description>
-      Zoodiac signs and interesting information about horoscopes.
+      Zodiac signs, horoscopes and stuff.
     </description>
     <author email="info@javedkhalil.com" href="https://javedkhalil.com">
         M. Javed Khalil
