@@ -8,7 +8,7 @@
         M. Javed Khalil
     </author>
     <content src="index.html" />
-    <access origin="*" />
+    <access origin="*" /> 
     
   <!-- Default icons and splash -->
   <icon src="icon.png" />
