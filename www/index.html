@@ -14,8 +14,9 @@
 	<!--custom js should be before jq-mobile js-->
 	<script src="scripts/custom.js"></script>
 	<script src="scripts/jquery.mobile-1.4.5.min.js"></script>
-	
-	<script src="cordova.js"></script> 
+	<!--this cordova.js will not load on html / but phonegap or build will load it ... 
+	without it plugins wont work-->
+	<script src="cordova.js"></script>
 
 </head>
 <body>
