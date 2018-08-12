@@ -17,6 +17,14 @@ $(document).on("mobileinit", function () {
   
 });
 
+$(document).on("pageinit", function() {
+	
+	if( $('#detail-4').hasClass('ui-page-active') ){
+		$('.comp-results .fa').hide();
+	}
+
+});
+
 $(document).on('pageinit','[data-role=page]',function(){
 
 	setTimeout(function(){ 
