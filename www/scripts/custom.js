@@ -1,9 +1,48 @@
 $(document).bind("mobileinit", function(){
   // console.log("loaded");
   $.mobile.allowCrossDomainPages = true;
+
+  $('a[rel=external], .external').click(function(e){
+		e.preventDefault();
+	    var elem = $(this);
+	    var url = elem.attr('href');
+	    //if (url.indexOf('http://') !== -1 || url.indexOf('https://') !== -1) {
+        window.open(url, '_system');
+	    //}
+  	});
+  
 });
 
+$(document).on("mobileinit", function () {
+  
+});
 
+$(document).on('pageinit','[data-role=page]',function(){
+
+	setTimeout(function(){ 
+        $('.app-splash').fadeOut(500);
+    }, 2000);
+
+    setTimeout(function(){ 
+        $('.app-splash').remove();
+    }, 3000);
+
+    $('.app-splash').click(function(){
+    	$('.app-splash').fadeOut(500);
+    });
+
+	// place code here to run on pageinit
+
+    $('a[rel=external], .external').click(function(e){
+		e.preventDefault();
+	    var elem = $(this);
+	    var url = elem.attr('href');
+	    //if (url.indexOf('http://') !== -1 || url.indexOf('https://') !== -1) {
+        window.open(url, '_system');
+	    //}
+  	});
+
+});
 
 $(document).delegate("#detail-4", "pageinit", function() {
 	

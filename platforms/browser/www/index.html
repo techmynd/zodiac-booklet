@@ -17,6 +17,15 @@
 </head>
 <body>
 
+<div class="app-splash">
+	<div class="inner">
+		<h1>Zodiac Booklet</h1>
+		<div class="text-center">
+			<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+		</div>
+	</div>
+</div>
+
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////-->
 <div data-role="page" id="home">
 
@@ -25,7 +34,7 @@
 	</header>
 
 	<article data-role="content" class="ui-body-a">
-		<ul data-role="listview" data-theme="a" data-filter="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+		<ul data-role="listview" data-theme="a" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
 			<li>
 				<a href="#detail-1" data-transition="slide">
 					<img src="images/img-z-11.jpg">
@@ -96,6 +105,7 @@
 	<footer data-role="footer" data-position="fixed" data-theme="b">
 		<nav data-role="navbar">
 			<ul>
+				<li><a href="#detail-1" data-transition="fade" data-icon="star">ZODIACS</a></li>
 				<li><a href="#articles-index" data-transition="fade" data-icon="grid">ARTICLES</a></li>
 				<li><a href="#info" data-transition="fade" data-icon="info">INFO</a></li>
 			</ul>
@@ -116,7 +126,7 @@
 	<article data-role="content" class="ui-body-a">
 	<h1>What's Your Zodiac Sign</h1>
 
-	<div class="centered-grid">
+	<div class="centered-grid stars-grid">
 		
 		<div class="row">
 			<div class="col-md-6">
@@ -133,8 +143,6 @@
 				<p>Planet: Venus<br>Element: Soil</p>
 				<div class="text-center"><a href="#taurus" data-transition="fade" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">more</a></div>
 			</div>
-		</div>
-		<div class="row">
     		<div class="col-md-6">
     			<img src="images/gemini.png">
 				<h3>GEMINI</h3>
@@ -149,8 +157,6 @@
 				<p>Planet: Moon<br>Element: Water</p>
 				<div class="text-center"><a href="#cancer" data-transition="fade" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">more</a></div>
 			</div>
-		</div>
-		<div class="row">
     		<div class="col-md-6">
     			<img src="images/leo.png">
 				<h3>LEO</h3>
@@ -165,8 +171,6 @@
 				<p>Planet: Mercury<br>Element: Soil</p>
 				<div class="text-center"><a href="#virgo" data-transition="fade" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">more</a></div>
 			</div>
-		</div>
-		<div class="row">		
     		<div class="col-md-6">
     			<img src="images/law.png">
 				<h3>LIBRA</h3>
@@ -181,8 +185,6 @@
 				<p>Planet: Mars<br>Element: Water</p>
 				<div class="text-center"><a href="#scorpio" data-transition="fade" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">more</a></div>
 			</div>
-		</div>
-		<div class="row">		
     		<div class="col-md-6">
     			<img src="images/centaur.png">
 				<h3>SAGITTARIUS</h3>
@@ -197,8 +199,6 @@
 				<p>Planet: Saturn<br>Element: Soil</p>
 				<div class="text-center"><a href="#capricorn" data-transition="fade" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">more</a></div>
 			</div>
-		</div>
-		<div class="row">		
     		<div class="col-md-6">
     			<img src="images/aquarius.png">
 				<h3>AQUARIUS</h3>
@@ -215,23 +215,6 @@
 			</div>
 		</div>
 	</div>
-
-	<p class="text-center">
-		<strong>Capricorn:</strong> Jan 20 - Feb 16<br>
-		<strong>Aquarius:</strong> Feb 16 - March 11<br>
-		<strong>Pisces:</strong> March 11 - April 18<br> 
-		<strong>Aries:</strong> April 18 - May 13<br> 
-		<strong>Taurus:</strong> May 13 - June 21<br> 
-		<strong>Gemini:</strong> June 21 - July 20<br> 
-		<strong>Cancer:</strong> July 20 - Aug 10<br> 
-		<strong>Leo:</strong> Aug. 10 - Sept 16<br>
-		<strong>Virgo:</strong> Sept 16 - Oct 30<br> 
-		<strong>Libra:</strong> Oct 30 - Nov 23<br>
-		<strong>Scorpio:</strong> Nov 23 - Nov 29<br> 
-		<strong>Ophiuchus:</strong> Nov 29 - Dec 17<br>
-		<strong>Sagittarius:</strong> Dec 17 - Jan 20
-	</p>
-
 
 	</article>
 	
@@ -260,7 +243,7 @@
 	<article data-role="content" class="ui-body-a">
 	<h1>Zodiac Elements</h1>
 	
-	<div class="centered-grid">
+	<div class="centered-grid elements-grid">
 		
 		<div class="row">
 			<div class="col-md-6">
@@ -275,8 +258,7 @@
 				<h4>Cancer, Scorpio, Pisces</h4>
 				<p>They are emotional, mysterious, cool minded, emotional, sensitive and broad minded.</p>
 			</div>
-		</div>
-		<div class="row">
+		
     		<div class="col-md-6">
     			<img src="images/sprout.png">
 				<h3>SOIL</h3>
@@ -824,73 +806,73 @@
 
 <p>Abdul Qadeer Khan, Ajay Devgan, Akon, Al Gore, Celine Dion, Colin Powell, Conan O'Brien, Eddie Murphy, Emma Watson, Emraan Hashmi, J. P. Morgan, Lady Gaga, Larry Page, Leonardo da Vinci, Mariah Carey, Rani Mukerji, Robert Downey Jr.</p>
 
-<div><a href="https://enquotes.com/authors.php?star_sign=aries" target="_blank" rel="external" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">Quotes by Famous Aries</a>
+<div><a href="https://enquotes.com/authors.php?star_sign=aries" rel="external" target="_system" class="external ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">Quotes by Famous Aries</a>
 
 <h3>Taurus</h3>
 
 <p>Al Pacino, Anushka Sharma, Audrey Hepburn, Ayub Khan, Christina Hendricks, Enrique Iglesias, Eric Schmidt, Henry Cavill, Jessica Alba, Madhuri Dixit, Mark Zuckerberg, Megan Fox, Penelope Cruz, Sunny Leone, Uma Thurman, William Shakespeare</p>
 
-<div><a href="https://enquotes.com/authors.php?star_sign=taurus" target="_blank" rel="external" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">Quotes by Famous Taurus</a>
+<div><a href="https://enquotes.com/authors.php?star_sign=taurus" target="_system" rel="external" class="external ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">Quotes by Famous Taurus</a>
 
 <h3>Gemini</h3>
 
 <p>Adriana Lima, Alexander Pope, Angelina Jolie, Anna Kournikova, Bob Dylan, Clint Eastwood, Donald Trump, Heidi Klum, Johnny Depp, Kate Upton, Liam Neeson, Marilyn Monroe, Morgan Freeman, Natalie Portman, Shilpa Shetty, Sonakshi Sinha, Sonam Kapoor</p>
 
-<div><a href="https://enquotes.com/authors.php?star_sign=gemini" target="_blank" rel="external" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">Quotes by Famous Gemini</a>
+<div><a href="https://enquotes.com/authors.php?star_sign=gemini" target="_system" rel="external" class="external ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">Quotes by Famous Gemini</a>
 
 <h3>Cancer</h3>
 
 <p>Benazir Bhutto, Bill Cosby, Elon Musk, George Michael, George W. Bush, Harrison Ford, Karisma Kapoor, Katrina Kaif, Malala Yousafzai, Tom Cruise, Tom Hanks, Vin Diesel, Princess Diana, Robin Williams, Selena Gomez</p>
 
-<div><a href="https://enquotes.com/authors.php?star_sign=cancer" target="_blank" rel="external" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">Quotes by Famous Cancer</a>
+<div><a href="https://enquotes.com/authors.php?star_sign=cancer" target="_system" rel="external" class="external ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">Quotes by Famous Cancer</a>
 
 <h3>Leo</h3>
 
 <p>Arnold Schwarzenegger, Asif Ali Zardari, Barack Obama, Ben Affleck, Charlize Theron, Chris Hemsworth, Demi Lovato, Fatima Jinnah, George Bernard Shaw, Henry Ford, Jennifer Lawrence, Jennifer Lopez, Kajol, Larry Ellison, Olivia Munn</p>
 
-<div><a href="https://enquotes.com/authors.php?star_sign=leo" target="_blank" rel="external" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">Quotes by Famous Leo</a>
+<div><a href="https://enquotes.com/authors.php?star_sign=leo" target="_system" rel="external" class="external ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">Quotes by Famous Leo</a>
 
 <h3>Virgo</h3>
 
 <p>Adam Sandler, Akshay Kumar, Asha Bhosle, Beyonce Knowles, Cameron Diaz, Charlie Sheen, Claudia Schiffer, Lakshmi Mittal, Michael Faraday, Michael Jackson, Mother Teresa, Paul Walker, Paulo Coelho, Salma Hayek, Sean Connery, Warren Buffett</p>
 
-<div><a href="https://enquotes.com/authors.php?star_sign=virgo" target="_blank" rel="external" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">Quotes by Famous Virgo</a>
+<div><a href="https://enquotes.com/authors.php?star_sign=virgo" target="_system" rel="external" class="external ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">Quotes by Famous Virgo</a>
 
 <h3>Libra</h3>
 
 <p>A. P. J. Abdul Kalam, Amitabh Bachchan, Christopher Reeve, Eminem, Ezra Miller, Gwen Stefani, John Lennon, Kim Kardashian, Lata Mangeshkar, Lil Wayne, Mahatma Gandhi, Margaret Thatcher, Monica Bellucci, Nusrat Fateh Ali Khan, Om Puri, Oscar Wilde, Ranbir Kapoor, Usher, Will Smith, Yash Chopra, Zakir Naik</p>
 
-<div><a href="https://enquotes.com/authors.php?star_sign=libra" target="_blank" rel="external" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">Quotes by Famous Libra</a>
+<div><a href="https://enquotes.com/authors.php?star_sign=libra" target="_system" rel="external" class="external ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">Quotes by Famous Libra</a>
 
 <h3>Scorpio</h3>
 
 <p>Aishwarya Rai, Amartya Sen, Anne Hathaway, Bill Gates, Bryan Adams, Carl Sagan, Demi Moore, Emma Stone, Jack Dorsey, Jawaharlal Nehru, John Keats, Katy Perry, Kendall Jenner, Martin Luther, Napoleon Hill, Allama Muhammad Iqbal, Muhammad Ali, Shahrukh Khan, Tim Cook</p>
 
-<div><a href="https://enquotes.com/authors.php?star_sign=scorpio" target="_blank" rel="external" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">Quotes by Famous Scorpio</a>
+<div><a href="https://enquotes.com/authors.php?star_sign=scorpio" target="_system" rel="external" class="external ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">Quotes by Famous Scorpio</a>
 
 <h3>Sagittarius</h3>
 
 <p>Bruce Lee, Alyssa Milano, Amanda Seyfried, Andrew Carnegie, Brad Pitt, Britney Spears, Dale Carnegie, Esha Gupta, Imran Khan, Jahangir Khan, John Abraham, Mark Twain, Miley Cyrus, Nicki Minaj, Raj Kapoor, Samuel L. Jackson, Scarlett Johansson, Taylor Swift, Walt Disney, William Blake, Sir. Winston Churchill, Woody Allen</p>
 
-<div><a href="https://enquotes.com/authors.php?star_sign=sagittarius" target="_blank" rel="external" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">Quotes by Famous Sagittarius</a>
+<div><a href="https://enquotes.com/authors.php?star_sign=sagittarius" target="_system" rel="external" class="external ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">Quotes by Famous Sagittarius</a>
 
 <h3>Capricorn</h3>
 
 <p>A. R. Rahman, Muhammad Ali Jinnah, Alan Watts, Anil Kapoor, Bipasha Basu, Bradley Cooper, Brian Tracy, Deepika Padukone, Grant Gustin (Barry Allen), Hrithik Roshan, Isaac Newton, J. R. R. Tolkien, Jeff Bezos, Jim Carrey, Kate Moss, Khalil Gibran, Mel Gibson, Michelle Obama, Nicolas Cage, Salman Khan</p>
 
-<div><a href="https://enquotes.com/authors.php?star_sign=capricorn" target="_blank" rel="external" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">Quotes by Famous Capricorn</a>
+<div><a href="https://enquotes.com/authors.php?star_sign=capricorn" target="_system" rel="external" class="external ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">Quotes by Famous Capricorn</a>
 
 <h3>Aquarius</h3>
 
 <p>Abdus Salam, Abhishek Bachchan, Abraham Lincoln, Bob Marley, Charles Darwin, Christian Bale, Enzo Ferrari, Jennifer Aniston, John Travolta, Les Brown, Michael Jordan, Oprah Winfrey, Paris Hilton, Preity Zinta, Shakira, Thomas A. Edison</p>
 
-<div><a href="https://enquotes.com/authors.php?star_sign=aquarius" target="_blank" rel="external" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">Quotes by Famous Aquarius</a>
+<div><a href="https://enquotes.com/authors.php?star_sign=aquarius" target="_system" rel="external" class="external ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">Quotes by Famous Aquarius</a>
 
 <h3>Pisces</h3>
 
 <p>Aamir Khan, Albert Einstein, Alexander Graham Bell, Anupam Kher, Bruce Willis, Chuck Norris, Drew Barrymore, Elizabeth Taylor, Emily Blunt, George Washington, Justin Bieber, Mitt Romney, Niki Taylor, Olivia Wilde</p>
 
-<div><a href="https://enquotes.com/authors.php?star_sign=pisces" target="_blank" rel="external" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">Quotes by Famous Pisces</a>
+<div><a href="https://enquotes.com/authors.php?star_sign=pisces" target="_system" rel="external" class="external ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">Quotes by Famous Pisces</a>
 	
 	</article>
 	
@@ -937,7 +919,7 @@
 	<article data-role="content" class="ui-body-a">
 	<h1>Know Your Zodiac Sign (ARTICLES)</h1>
 	
-		<ul data-role="listview" data-theme="a" data-filter="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+		<ul data-role="listview" data-theme="a" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
 			<li>
 				<a href="#article-1" data-transition="slide">
 					<h1>Zodiac Do's & Don'ts</h1>
@@ -995,9 +977,6 @@
 			</li>
 		</ul>
 	
-
-
-
 
 	</article>
 	
@@ -1575,99 +1554,51 @@ Irresistible. Loves being in long relationships. Great talker. Always gets what 
 
 <h3>Sagittarius</h3>
 
-<div class="videoWrapper">
-<iframe src="https://www.youtube.com/embed/UfWaURBxPtk?rel=0&amp;showinfo=0" frameborder="0"  allowfullscreen></iframe>
-</div>
-
-<a href="https://www.youtube.com/watch?time_continue=1&v=UfWaURBxPtk" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all" target="_blank" rel="nofollow">LINK</a>
+<a href="https://www.youtube.com/watch?time_continue=1&v=UfWaURBxPtk" class="external ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all" target="_system" rel="external">LINK</a>
 
 <h3>Scorpio</h3>
 
-<div class="videoWrapper">
-<iframe src="https://www.youtube.com/embed/EkxoUfgVHkk?rel=0&amp;showinfo=0" frameborder="0"  allowfullscreen></iframe>
-</div>
-
-<a href="https://www.youtube.com/watch?v=EkxoUfgVHkk" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all" target="_blank" rel="nofollow">LINK</a>
+<a href="https://www.youtube.com/watch?v=EkxoUfgVHkk" class="external ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all" target="_system" rel="external">LINK</a>
 
 <h3>Libra</h3>
 
-<div class="videoWrapper">
-<iframe src="https://www.youtube.com/embed/rjZVQrlewZI?rel=0&amp;showinfo=0" frameborder="0"  allowfullscreen></iframe>
-</div>
-
-<a href="https://www.youtube.com/watch?v=rjZVQrlewZI" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all" target="_blank" rel="nofollow">LINK</a>
+<a href="https://www.youtube.com/watch?v=rjZVQrlewZI" class="external ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all" target="_system" rel="external">LINK</a>
 
 <h3>Virgo</h3>
 
-<div class="videoWrapper">
-<iframe src="https://www.youtube.com/embed/hvNAXfBkQQk?rel=0&amp;showinfo=0" frameborder="0"  allowfullscreen></iframe>
-</div>
-
-<a href="https://www.youtube.com/watch?v=hvNAXfBkQQk" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all" target="_blank" rel="nofollow">LINK</a>
+<a href="https://www.youtube.com/watch?v=hvNAXfBkQQk" class="external ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all" target="_system" rel="external">LINK</a>
 
 <h3>Leo</h3>
 
-<div class="videoWrapper">
-<iframe src="https://www.youtube.com/embed/3aul4uA2JNg?rel=0&amp;showinfo=0" frameborder="0"  allowfullscreen></iframe>
-</div>
-
-<a href="https://www.youtube.com/watch?v=3aul4uA2JNg" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all" target="_blank" rel="nofollow">LINK</a>
+<a href="https://www.youtube.com/watch?v=3aul4uA2JNg" class="external ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all" target="_system" rel="external">LINK</a>
 
 <h3>Cancer</h3>
 
-<div class="videoWrapper">
-<iframe src="https://www.youtube.com/embed/wRWCxVYtep8?rel=0&amp;showinfo=0" frameborder="0"  allowfullscreen></iframe>
-</div>
-
-<a href="https://www.youtube.com/watch?v=wRWCxVYtep8" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all" target="_blank" rel="nofollow">LINK</a>
+<a href="https://www.youtube.com/watch?v=wRWCxVYtep8" class="external ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all" target="_system" rel="external">LINK</a>
 
 <h3>Gemini</h3>
 
-<div class="videoWrapper">
-<iframe src="https://www.youtube.com/embed/AtKSumm0acM?rel=0&amp;showinfo=0" frameborder="0"  allowfullscreen></iframe>
-</div>
-
-<a href="https://www.youtube.com/watch?v=AtKSumm0acM" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all" target="_blank" rel="nofollow">LINK</a>
+<a href="https://www.youtube.com/watch?v=AtKSumm0acM" class="external ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all" target="_system" rel="external">LINK</a>
 
 <h3>Taurus</h3>
 
-<div class="videoWrapper">
-<iframe src="https://www.youtube.com/embed/eSAOGoF1w-o?rel=0&amp;showinfo=0" frameborder="0"  allowfullscreen></iframe>
-</div>
-
-<a href="https://www.youtube.com/watch?v=eSAOGoF1w-o" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all" target="_blank" rel="nofollow">LINK</a>
+<a href="https://www.youtube.com/watch?v=eSAOGoF1w-o" class="external ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all" target="_system" rel="external">LINK</a>
 
 <h3>Aries</h3>
 
-<div class="videoWrapper">
-<iframe src="https://www.youtube.com/embed/gmJMchgLh1Y?rel=0&amp;showinfo=0" frameborder="0"  allowfullscreen></iframe>
-</div>
-
-<a href="https://www.youtube.com/watch?v=gmJMchgLh1Y" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all" target="_blank" rel="nofollow">LINK</a>
+<a href="https://www.youtube.com/watch?v=gmJMchgLh1Y" class="external ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all" target="_system" rel="external">LINK</a>
 
 <h3>Pisces</h3>
 
-<div class="videoWrapper">
-<iframe src="https://www.youtube.com/embed/nH3DwioIKJU?rel=0&amp;showinfo=0" frameborder="0"  allowfullscreen></iframe>
-</div>
-
-<a href="https://www.youtube.com/watch?v=nH3DwioIKJU" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all" target="_blank" rel="nofollow">LINK</a>
+<a href="https://www.youtube.com/watch?v=nH3DwioIKJU" class="external ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all" target="_system" rel="external">LINK</a>
 
 <h3>Aquarius</h3>
 
-<div class="videoWrapper">
-<iframe src="https://www.youtube.com/embed/gB9xc6ioiW8?rel=0&amp;showinfo=0" frameborder="0"  allowfullscreen></iframe>
-</div>
-
-<a href="https://www.youtube.com/watch?v=gB9xc6ioiW8" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all" target="_blank" rel="nofollow">LINK</a>
+<a href="https://www.youtube.com/watch?v=gB9xc6ioiW8" class="external ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all" target="_system" rel="external">LINK</a>
 
 <h3>Capricorn</h3>
 
-<div class="videoWrapper">
-<iframe src="https://www.youtube.com/embed/K2YDYp-Bci8?rel=0&amp;showinfo=0" frameborder="0"  allowfullscreen></iframe>
-</div>
-
-<a href="https://www.youtube.com/watch?v=K2YDYp-Bci8" class="ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all" target="_blank" rel="nofollow">LINK</a>
+<a href="https://www.youtube.com/watch?v=K2YDYp-Bci8" class="external ui-btn ui-btn-a ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all" target="_system" rel="external">LINK</a>
 
 	<div class="text-center"><a href="#articles-index" data-transition="fade" class="ui-btn ui-btn-b ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-btn-corner-all">ALL ARTICLES</a></div>
 	</article>
@@ -2741,29 +2672,28 @@ Irresistible. Loves being in long relationships. Great talker. Always gets what 
 
 	<article data-role="content" class="ui-body-a">
 	<h1>About</h1>
-	<p>This app will not tell you your day will be good or bad. This app is a booklet containing general information about zodiac signs and such interesting stuff. This is a quick reference if you want to learn about different zodiac signs quickly.</p>
-	<p>This app is presented as is and all information in this app is for educational and entertainment purpose only. It should not be taken seriously in any way. The information may not be correct. You can not divide whole human population of planet earth into 12 groups and label with specific characteristics, right? So take it as entertainment and read through several interesting stuff about zodiac signs but don't take it seriously.</p>
+	<p>This app will not tell you how your day will be spent. It is a booklet containing general information about zodiac signs and such interesting stuff, that can be used for a quick reference in case you want to learn about different zodiac signs quickly.</p>
+	<p>This app is presented as is and all information in this app is for educational and entertainment purpose only. It should not be taken seriously in any way. The information may not be correct. You can not divide whole human population of planet earth into 12 groups and label with specific characteristics, right? So take it as fun.</p>
 	<p>
 	<span class="text-muted">App Author:</span> M. Javed Khalil Hiroshi<br>
 	<span class="text-muted">Author's Zodiac Sign:</span> Sagittarius<br>
-	<span class="text-muted">Homepage:</span> <a href="https://javedkhalil.com" rel="external" target="_blank">javedkhalil.com</a><br>
-	<span class="text-muted">Facebook:</span> <a href="https://www.facebook.com/decentdeveloper" rel="external" target="_blank">https://www.facebook.com/decentdeveloper</a><br>
-	<span class="text-muted">Email:</span> <a href="mailto:info@javedkhalil.com" rel="external" target="_blank">info@javedkhalil.com</a><br><br>
+	<span class="text-muted">Homepage:</span> <a href="https://javedkhalil.com" class="external" rel="external" target="_system">javedkhalil.com</a><br>
+	<span class="text-muted">Facebook:</span> <a href="https://www.facebook.com/decentdeveloper" rel="external"  target="_system" class="external">@decentdeveloper</a><br>
+	<span class="text-muted">Email:</span> info@javedkhalil.com<br><br>
 	Suggestions and references are welcome. This app will be available on play store. If in any case not, you can contact me and request the latest version or check out my website to download it later.
 	</p>
 	<p class="donations">
 		<span class="text-muted">DONATIONS:</span><br>
-		<span class="text-muted">BTC:</span> <span><a href="https://www.blockchain.com/btc/address/1Lwf9PsZLXb9bumUoqh9YXwsrZ1x9c2Pwi" target="_blank" rel="external">1Lwf9PsZLXb9bumUoqh9YXwsrZ1x9c2Pwi</a></span><br>
-		<span class="text-muted">ETH:</span> <span><a href="https://etherscan.io/address/0xfc079db5eAc7bdAa4a4A41E04ACa3909D4535A12" target="_blank" rel="external">0xfc079db5eAc7bdAa4a4A41E04ACa3909D4535A12</a></span><br>
-		<span class="text-muted">LTC:</span> <span><a href="https://live.blockcypher.com/ltc/address/LdipdV4q8cJaPhtwauR4zdULvD2yx4RaQh/" target="_blank" rel="external">LdipdV4q8cJaPhtwauR4zdULvD2yx4RaQh</a></span><br><br>
-		Donations keep this app ads free, clean and will help in further development.
+		<span class="text-muted">BTC:</span> <span class="daddr">1Lwf9PsZLXb9bumUoqh9YXwsrZ1x9c2Pwi</span><br>
+		<span class="text-muted">ETH:</span> <span class="daddr">0xfc079db5eAc7bdAa4a4A41E04ACa3909D4535A12</span><br>
+		<span class="text-muted">LTC:</span> <span class="daddr">LdipdV4q8cJaPhtwauR4zdULvD2yx4RaQh</span><br><br>
 	</p>
 
-	<p>Or if you want to build your website, web app or mobile app, we are a team of best web & app developers and work with all technologies out there. Get in touch to get your app developed.</p>
+	<p>If you want to build your website, webapp or mobile app, we are a team of best web & app developers and work with all possible technologies out there. Get in touch to get your app developed.</p>
 
 	<p>
 		CREDITS<br>
-		Images used in this app have been taken from search engine and icons from flaticon.com
+		Images used in this app have been taken from search engine randomly and icons from flaticon.com
 	</p>
 
 	</article>
