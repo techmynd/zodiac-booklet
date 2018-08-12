@@ -27,17 +27,20 @@ $(document).on("pageinit", function() {
 
 $(document).on('pageinit','[data-role=page]',function(){
 
-	setTimeout(function(){ 
-        $('.app-splash').fadeOut(500);
-    }, 2000);
+	/* 
+	// custom animation not needed
+		setTimeout(function(){ 
+	        $('.app-splash').fadeOut(500);
+	    }, 2000);
 
-    setTimeout(function(){ 
-        $('.app-splash').remove();
-    }, 3000);
+	    setTimeout(function(){ 
+	        $('.app-splash').remove();
+	    }, 3000);
 
-    $('.app-splash').click(function(){
-    	$('.app-splash').fadeOut(500);
-    });
+	    $('.app-splash').click(function(){
+	    	$('.app-splash').fadeOut(500);
+	    });
+	*/
 
 	// place code here to run on pageinit
 
@@ -321,3 +324,5 @@ function handleExternalURLs() {
     }
 }
 // open external urls in new window /////////////////////
+
+// settings & tweaks
