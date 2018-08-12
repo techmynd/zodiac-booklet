@@ -380,7 +380,7 @@ select option {
 
 	.ui-header h1, .ui-header .ui-title {font-size: 14px;}
 
-	#detail-1 h1 {
+	#detail-1 .ui-content h1 {
 		font-size: 20px;
     	letter-spacing: 0px;
 	}
