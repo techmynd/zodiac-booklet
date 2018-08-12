@@ -15,4 +15,8 @@
     <icon src="icon.png" />
     <splash src="splash.png" />
     <preference name="android-targetSdkVersion" value="26" />
+    <preference name="fullscreen" value="true" />
+    <preference name="target-device" value="universal" />
+    <preference name="exit-on-suspend" value="true" />
+    <preference name="KeepRunning" value="true" />
 </widget>

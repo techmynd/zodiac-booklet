@@ -9,16 +9,28 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
-    <icon src="icon.png" />
-    <splash src="splash.png" />
-
-    <preference name="android-targetSdkVersion" value="26"/>
     
-    <plugin name="cordova-plugin-device" spec="~2.0.2" />
-    <plugin name="cordova-plugin-device-orientation" spec="~2.0.1" />
-    <plugin name="cordova-plugin-dialogs" spec="~2.0.1" />
-    <plugin name="cordova-plugin-inappbrowser" spec="~3.0.0" />
-    <plugin name="cordova-plugin-splashscreen" spec="~5.0.2" />
+  <!-- Default icons and splash -->
+  <icon src="icon.png" />
+  <splash src="splash.png" />
+
+  <!-- Google Requirement -->
+  <preference name="android-targetSdkVersion" value="26"/>
+
+  <!-- all platforms -->
+  <preference name="fullscreen" value="true" />
+  <!-- iOS only -->
+  <preference name="target-device" value="universal" />
+  <preference name="exit-on-suspend" value="true" />
+
+  <preference name="KeepRunning" value="true" />
+    
+  <!-- Plugins support -->  
+  <plugin name="cordova-plugin-device" spec="~2.0.2" />
+  <plugin name="cordova-plugin-device-orientation" spec="~2.0.1" />
+  <plugin name="cordova-plugin-dialogs" spec="~2.0.1" />
+  <plugin name="cordova-plugin-inappbrowser" spec="~3.0.0" />
+  <plugin name="cordova-plugin-splashscreen" spec="~5.0.2" />
     
 <platform name="android">
 	<icon qualifier="ldpi" src="res/icons/android/drawable-ldpi-icon.png" />
@@ -68,6 +80,5 @@
 	<splash height="960" platform="ios" src="res/screens/ios/Default@2x~iphone.png" width="640" />
 	<splash height="480" platform="ios" src="res/screens/ios/Default~iphone.png" width="320" />
 </platform>
-
 
 </widget>
