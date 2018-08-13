@@ -1,0 +1,7 @@
+1.0.4
+=====
+
+> Added text selection and clipboard and copying capability
+> Added social sharing option
+> Enhancements and bug fixes
+
