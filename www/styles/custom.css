@@ -219,6 +219,19 @@ select option {
 }
 
 
+.zodiac-detail .ui-content h3:first-of-type {
+	margin-top: 0;
+	font-size: 18px;
+    font-weight: 500;
+}
+
+#detail-2 .centered-grid h3 {font-size: 26px; margin-bottom: 0;}
+#detail-2 .centered-grid h4 {margin-top: 0;}
+#detail-2 .centered-grid img {max-width: 80px; margin-top: 20px;}
+.btn-compare-compatibility {letter-spacing: 1px; font-weight: 600 !important;}
+#detail-7 .ui-btn {font-size: 14px; font-weight: 500;}
+#articles-index h1 {margin-bottom: 12px;}
+
 /*custom animation not needed now - also ui loader is restored */
 /*
 .ui-loader {
@@ -359,9 +372,12 @@ select option {
     	text-align: center !important;
     	
     	background-color: #d9a7c7 !important;
-    	background: linear-gradient(to right bottom, #fffcdc,#d9a7c7) !important;
+    	background: linear-gradient(82deg, #fffcdc,#d9a7c7) !important;
+    	background: -webkit-linear-gradient(82deg, #fffcdc,#d9a7c7) !important;
 		text-shadow: none !important;
 	}
+
+	#home .ui-listview a {padding: 20px 20px 10px 20px !important;}
 
 	.ui-listview img {
 		position: static !important;
@@ -383,6 +399,13 @@ select option {
 	#detail-1 .ui-content h1 {
 		font-size: 20px;
     	letter-spacing: 0px;
+	}
+
+	#articles-index .ui-content .ui-listview a {
+		white-space: normal !important;
+		text-align: center !important;
+		background-color: #f6f6f6 !important;
+		background: #f6f6f6 !important;
 	}
 
 }
